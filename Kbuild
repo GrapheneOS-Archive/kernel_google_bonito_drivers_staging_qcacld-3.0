@@ -39,6 +39,8 @@ endif
 # Make WLAN as open-source driver by default
 WLAN_OPEN_SOURCE := 1
 
+WLAN_DISABLE_BUILD_TAG := y
+
 ifneq ($(KERNEL_BUILD),)
 	# These are configurable via Kconfig for kernel-based builds
 	# Need to explicitly configure for Android-based builds
